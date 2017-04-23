@@ -1,0 +1,1 @@
+const cognitiveServices = require('cognitive-services');
