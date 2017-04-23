@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link  rel="stylesheet" href="css/bootstrap.min.css"></link >
+        <link  rel="stylesheet" href="css/bootstrap-theme.min.css"></link >
+        <link  rel="stylesheet" href="css/photo.css"></link >
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">    
+                    <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Brand</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class=".col-xs-12 col-md-6 col-md-offset-3">
+                    <video id="videoSnap" autoplay class="center-block"></video>                 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6 col-md-offset-3">
+                    <canvas id="canvasSnap" width="640" height="480" class="center-block hide"></canvas>
+                    <button id="btnSnap" class="btn btn-primary center-block" onclick="photoController.capturarPhoto(event)">Tirar Photo e Entrar</button>
+                </div>
+            </div>
+        </div>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>        
+        <script type="text/javascript" src="models/photo.js"></script>
+        <script type="text/javascript" src="models/lista-photos.js"></script>
+        <script type="text/javascript" src="controllers/photo-controller.js"></script>
+        <script type="text/javascript" src="services/cognitiveService.js"></script>
+        <script type="text/javascript" src="services/httpService.js"></script>
+        
+        <script type="text/javascript">
+            let photoController = new PhotoController();
+
+        </script
+    </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "snapworkcafe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cognitive-services": "^0.1.0",
+    "consign": "^0.1.2",
+    "express": "^4.14.0",
+    "jsonwebtoken": "^7.2.1",
+    "pg": "^6.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Felipe Montino",
+  "license": "ISC"
+}

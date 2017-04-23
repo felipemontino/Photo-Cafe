@@ -1,0 +1,8 @@
+#videoSnap, #canvasSnap{
+    height: 480px;
+    width: 640px;
+}
+
+#btnSnap{
+    margin-top: 20px;
+}
